@@ -84,9 +84,6 @@ combo_##NAME { \
        };
     };
 
-// Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };
-
     behaviors {
         hl: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
