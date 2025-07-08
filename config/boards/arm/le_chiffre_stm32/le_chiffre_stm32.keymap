@@ -23,7 +23,6 @@ combo_##NAME { \
 
 
 / {
-
     combos {
        compatible = "zmk,combos";
         /* Top corners (Q+P) = bootloader */
@@ -117,6 +116,9 @@ combo_##NAME { \
         };
     };
 
+keymap {
+    compatible = "zmk,keymap";
+
         BASE_layer {
             label= "BASE";
             bindings = <
@@ -150,3 +152,4 @@ combo_##NAME { \
             >;
         };
     };
+};
