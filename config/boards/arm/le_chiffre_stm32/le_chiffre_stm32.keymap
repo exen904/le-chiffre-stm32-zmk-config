@@ -23,6 +23,14 @@ combo_##NAME { \
 
 
 / {
+    sensors {
+        compatible = "zmk,sensors";
+            encoder_1: encoder_1 {
+            sensor = <&encoder>;
+            bindings = <&encoder_cw &encoder_ccw>;
+        };
+    };
+    
     combos {
        compatible = "zmk,combos";
         /* Top corners (Q+P) = bootloader */
@@ -113,6 +121,17 @@ combo_##NAME { \
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>;
+        };
+        encoder_cw: encoder_cw {
+            compatible = "zmk,behavior-momentary";
+            label = "Encoder Clockwise";
+            bindings = <&kp C_VOL_UP>;
+        };
+
+        encoder_ccw: encoder_ccw {
+            compatible = "zmk,behavior-momentary";
+            label = "Encoder Counterclockwise";
+            bindings = <&kp C_VOL_DN>;
         };
     };
 
