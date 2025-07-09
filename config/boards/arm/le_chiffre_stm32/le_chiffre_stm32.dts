@@ -116,7 +116,7 @@
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
-        status = "disabled";
+        status = "okay";
         sensors = <&encoder>;
 
 	triggers-per-rotation = <15>;
