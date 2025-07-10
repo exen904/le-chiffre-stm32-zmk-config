@@ -147,7 +147,7 @@ keymap {
                                                                     &lt 1 TAB       &kp SPACE                 &kp ENTER       &lt 2 BSPC                                              
                                                                                                 &kp C_MUTE
                         >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            /* sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; */
         };
 
 
@@ -158,7 +158,7 @@ keymap {
                 &kp LSHFT    &kp LEFT        &kp DOWN         &kp RIGHT          &kp DE_LBKT    &kp DE_RBKT      &kp N4       &kp N5       &kp N6         &kp DE_MINUS
                 &kp DEL      &kp PAGE_UP     &kp LC(C)        &kp LC(V)          &kp DE_LPAR    &kp DE_RPAR      &kp N1       &kp N2       &kp N3         &kp DOT 
                                                                    &trans        &trans         &kp N0       &kp BSPC                                                  
-                                                                                        &kp C_MUTE
+                                                                                        
             >;
         };
 
@@ -171,7 +171,7 @@ keymap {
                 &kp DE_A_UMLAUT &kp DE_SZ     &trans         &kp DE_LT          &kp DE_GT       &kp DE_U_UMLAUT &kp C_MUTE      &trans          &trans         &kp DE_O_UMLAUT
                 &trans          &trans        &kp LC(C)      &kp LC(V)          &trans          &kp C_VOL_DN    &kp C_VOL_UP    &kp C_PREVIOUS  &kp C_NEXT     &kp BACKSLASH
                                                              &trans             &trans          &trans      &trans                                             
-                                                                                        &kp C_MUTE
+                                                                                        
             >;
         };
     };
