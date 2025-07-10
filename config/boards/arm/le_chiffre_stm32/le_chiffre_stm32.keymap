@@ -23,13 +23,13 @@ combo_##NAME { \
 
 
 / {
-    sensors {
+/*     sensors {
         compatible = "zmk,sensors";
-            encoder: encoder {
+            encoder_1: encoder_1 {
             sensor = <&encoder>;
             bindings = <&encoder_cw &encoder_ccw>;
         };
-    };
+    }; */
     
     combos {
        compatible = "zmk,combos";
