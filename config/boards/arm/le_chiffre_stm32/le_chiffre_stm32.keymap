@@ -25,7 +25,7 @@ combo_##NAME { \
 / {
     sensors {
         compatible = "zmk,sensors";
-            encoder_1: encoder_1 {
+            encoder: encoder {
             sensor = <&encoder>;
             bindings = <&encoder_cw &encoder_ccw>;
         };
