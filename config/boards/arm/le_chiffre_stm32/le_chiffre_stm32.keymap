@@ -178,6 +178,8 @@
                                                           &lt NUM TAB     &kp SPACE    &kp ENTER  &lt NAV BSPC
                                                                              &kp C_MUTE
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         NUM_layer {
@@ -214,6 +216,8 @@
                                                                          &lt NUM_MAC TAB   &kp SPACE    &kp ENTER  &lt SYM_MAC BSPC
                                                                                               &kp C_MUTE
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         NUM_mac {
